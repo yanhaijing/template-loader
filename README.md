@@ -4,7 +4,7 @@
 
 ## 安装
     
-    $ npm install --save template_js # 安装template运行时
+    $ npm install --save template_js@0.6.1 # 安装template运行时
     $ npm install --save templatejs-loader # 安装template编译插件
 
 ## 配置
