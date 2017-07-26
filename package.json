@@ -1,5 +1,5 @@
 {
-  "name": "template-loader",
+  "name": "templatejs-loader",
   "version": "0.1.0",
   "description": "template.js的webpack编译插件——一款javascript模板引擎",
   "main": "index.js",

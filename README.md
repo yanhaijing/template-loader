@@ -4,7 +4,7 @@
 
 ## 安装
 
-    $ npm install --save template-loader
+    $ npm install --save templatejs-loader
 
 ## 配置
 配置参数同[template.js](https://github.com/yanhaijing/template.js/blob/master/doc/api.md#templateconfig)参数一样，其中expression参数会作为获取template的表达式。
@@ -12,7 +12,7 @@
     loaders: [
         {
             test: /\.tmpl/,
-            loader: __dirname + "/../",
+            loader: "templatejs-loader",
             query: {
                 sTag: '<#',
                 eTag: '#>',
