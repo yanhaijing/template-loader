@@ -1,29 +1,37 @@
 {
-    "name": "template-loader",
-    "version": "0.1.0",
-    "description": "template.js的webpack编译插件——一款javascript模板引擎",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": ["template", "template.js"],
-    "author": {
-        "name": "yanhaijing",
-        "email": "yanhaijing@yeah.net",
-        "url": "http://yanhaijing.com"
-    },
-    "homepage" : "https://github.com/yanhaijing/template-loader",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/yanhaijing/template-loader.git"
-    },
-    "bugs": {
-        "url": "https://github.com/yanhaijing/template-loader/issues"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "https://github.com/yanhaijing/template-loader/blob/master/MIT-LICENSE"
-        }
-    ],
+  "name": "template-loader",
+  "version": "0.1.0",
+  "description": "template.js的webpack编译插件——一款javascript模板引擎",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "template",
+    "template.js"
+  ],
+  "author": {
+    "name": "yanhaijing",
+    "email": "yanhaijing@yeah.net",
+    "url": "http://yanhaijing.com"
+  },
+  "homepage": "https://github.com/yanhaijing/template-loader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanhaijing/template-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yanhaijing/template-loader/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/yanhaijing/template-loader/blob/master/MIT-LICENSE"
+    }
+  ],
+  "dependencies": {
+    "loader-utils": "1.1.0",
+    "object-assign": "4.1.1",
+    "template_js": "0.6.1"
+  }
 }
