@@ -22,6 +22,18 @@
         }
     ]
 
+新建模版文件demo.tmpl
+
+    <div>
+        <#=abc#>
+    </div>
+
+在js中`require`模版文件，并渲染
+
+    var tpl = require('./demo.tmpl');
+
+    document.getElementById('test').innerHTML = tpl({abc: 'yanhaijing'});
+
 [demo](example)
 
 ## 报告问题
