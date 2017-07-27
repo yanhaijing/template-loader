@@ -10,7 +10,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.tmpl/,
-                loader: __dirname + "/../",
+                loader: __dirname + "/../../",
                 query: {
                     sTag: '<#',
                     eTag: '#>',
