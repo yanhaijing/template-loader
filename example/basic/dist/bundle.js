@@ -46,7 +46,24 @@
 
 	var tpl = __webpack_require__(1);
 
-	document.getElementById('test').innerHTML = tpl({abc: 'yanhaijing'});
+	var html = tpl({
+	    a: 5,
+	    b: 5,
+	    list: [
+	        {
+	            name: '颜海镜',
+	            html: '<div>div</div>',
+	            url: 'http://yanhaijing.com?颜海镜'
+	        },
+	        {
+	            name: '颜海镜2',
+	            html: '<p>这里是段落哦</p>',
+	            url: 'http://yanhaijing.com?颜海镜'
+	        }
+	    ]
+	});
+
+	document.getElementById('test').innerHTML = html;
 
 
 /***/ }),
@@ -62,7 +79,7 @@
 	            keyArr.push('"' + key + '"');
 	            valArr.push(data[key]);
 	        }
-	        var source = 'new Function(' + keyArr.join(',') + ', "\\"use strict\\";var __code__ = \\"\\";;__code__ += (\\"<div>     \\");__code__ += (__encodeHTML__(typeof (abc) === \\"undefined\\" ? \\"\\" : abc));__code__ += (\\" </div> \\");return __code__")';
+	        var source = 'new Function(' + keyArr.join(',') + ', "\\"use strict\\";var __code__ = \\"\\";;__code__ += (\\"<!-- html 注释 \\\' \\\\\\\" --> \\");var i = 0;__code__ += (\\" \\");var len = 3;;__code__ += (\\" \\");var a = 1; b = 3;__code__ += (\\"  a=\\");__code__ += (__encodeHTML__(typeof (a) === \\"undefined\\" ? \\"\\" : a));__code__ += (\\" b=\\");__code__ += (__encodeHTML__(typeof (b) === \\"undefined\\" ? \\"\\" : b));__code__ += (\\"  d=\\");__code__ += (__encodeHTML__(typeof (d) === \\"undefined\\" ? \\"\\" : d));__code__ += (\\"(undefined)  \\");__code__ += (__encodeHTML__(typeof (a + \'1 \\"2\\"\' + \\"2\\") === \\"undefined\\" ? \\"\\" : a + \'1 \\"2\\"\' + \\"2\\"));__code__ += (\\"  \\");/*注释注释*/;__code__ += (\\"  \\");for(i = 0; i < len; i++) {;__code__ += (\\" <div>数字：\\");__code__ += (__encodeHTML__(typeof (i) === \\"undefined\\" ? \\"\\" : i));__code__ += (\\" \\");__code__ += (__encodeHTML__(typeof (i+1) === \\"undefined\\" ? \\"\\" : i+1));__code__ += (\\"</div> \\");};__code__ += (\\"      <div class=\\\\\\\"t\\es\\\'t\\\\\\\" id=\\\'tes\\\\\\\"t\\\'>123</div>  123   \\");if (\'1\') {    console.log(\\"123\\")};__code__ += (\\"  <div class=\\\\\\\"test\\\\\\\">     <ul class=\\\'test\\\'>         \\");for (var i = 0; i < list.length; i++) {;__code__ += (\\"         <li>             \\");var li = list[i];;__code__ += (\\"             \\");__code__ += (typeof (li.name) === \\"undefined\\" ? \\"\\" : li.name);__code__ += (\\"             \\");__code__ += (__encodeHTML__(typeof (li.html) === \\"undefined\\" ? \\"\\" : li.html));__code__ += (\\"             \\");__code__ += (typeof (li.url) === \\"undefined\\" ? \\"\\" : encodeURI(li.url));__code__ += (\\"         </li>         \\");};__code__ += (\\"     </ul> </div> \\");return __code__")';
 	        try {
 	            var fn = eval(source);
 	            var html = fn.apply(null, valArr);
