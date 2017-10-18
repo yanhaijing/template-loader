@@ -7,6 +7,7 @@
     $ npm install --save template_js@0.6.1 # 安装template运行时
     $ npm install --save templatejs-loader # 安装template编译插件
 
+**注意：template_js 必须是0.6.1**
 ## 配置
 配置参数同[template.js](https://github.com/yanhaijing/template.js/blob/master/doc/api.md#templateconfig)参数一样，其中expression参数会作为获取template的表达式。
 
