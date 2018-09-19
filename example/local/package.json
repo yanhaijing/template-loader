@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "test": "webpack"
-  },
-  "dependencies": {
-    "webpack": "~1.15.0"
-  }
-}
